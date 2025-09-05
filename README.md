@@ -1,0 +1,2 @@
+# graham-difuzyon-efuzyon-yasasi
+
