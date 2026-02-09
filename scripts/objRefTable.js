@@ -16,6 +16,8 @@ self.C3_GetObjectRefTable = function () {
 		C3.Plugins.Browser.Acts.GoToURL,
 		C3.Plugins.System.Acts.ResetGlobals,
 		C3.Plugins.System.Acts.RestartLayout,
+		C3.Plugins.System.Acts.SetVar,
+		C3.Plugins.System.Acts.MoveLayer,
 		C3.Plugins.System.Acts.SetLayerVisible,
 		C3.Plugins.System.Cnds.OnLayoutStart,
 		C3.Plugins.video.Acts.Pause,
@@ -32,7 +34,8 @@ self.C3_GetObjectRefTable = function () {
 		C3.Plugins.video.Acts.Play,
 		C3.Plugins.Sprite.Acts.SetAnimSpeed,
 		C3.Plugins.Sprite.Acts.StartAnim,
-		C3.Plugins.video.Cnds.IsPlaying,
+		C3.Plugins.Sprite.Acts.SetAnim,
+		C3.Plugins.video.Acts.SetSource2,
 		C3.Plugins.video.Cnds.OnPlaybackEvent,
 		C3.Plugins.Sprite.Acts.SetOpacity,
 		C3.Plugins.System.Cnds.TriggerOnce,
@@ -43,6 +46,7 @@ self.C3_GetObjectRefTable = function () {
 		C3.Plugins.Sprite.Exps.AnimationFrame,
 		C3.Plugins.System.Acts.AddVar,
 		C3.Plugins.System.Acts.SubVar,
+		C3.Plugins.video.Cnds.IsPlaying,
 		C3.Behaviors.Tween.Acts.TweenOneProperty,
 		C3.Plugins.System.Cnds.EveryTick,
 		C3.Plugins.Sprite.Acts.SetWidth,
@@ -98,6 +102,9 @@ self.C3_JsPropNameTable = [
 	{videoUIDArray: 0},
 	{activeItemIndex: 0},
 	{LevelEndControl: 0},
+	{timeCount: 0},
+	{tersControl: 0},
+	{timeStart: 0},
 	{isLoader: 0}
 ];
 

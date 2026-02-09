@@ -1336,25 +1336,26 @@ self.C3_ExpressionFuncs = [
 		() => 0.3,
 		() => 1,
 		() => "https://x.com/home",
-		() => "video0duman",
-		() => "video0tanecik",
+		() => "bg",
+		p => {
+			const v0 = p._GetNode(0).GetVar();
+			return () => (and("video", v0.GetValue()) + "tanecik");
+		},
+		p => {
+			const v0 = p._GetNode(0).GetVar();
+			return () => (and("video", v0.GetValue()) + "duman");
+		},
 		() => "video1duman",
 		() => "video1tanecik",
-		() => "video2duman",
-		() => "video2tanecik",
 		() => "video3duman",
 		() => "video3tanecik",
+		() => "video5duman",
+		() => "video5tanecik",
+		() => "video7duman",
+		() => "video7tanecik",
 		() => 0.8,
 		() => "BetterOutline",
 		() => 0.4,
-		p => {
-			const v0 = p._GetNode(0).GetVar();
-			return () => v0.GetValue();
-		},
-		p => {
-			const v0 = p._GetNode(0).GetVar();
-			return () => (v0.GetValue() + 1);
-		},
 		p => {
 			const f0 = p._GetNode(0).GetBoundMethod();
 			const f1 = p._GetNode(1).GetBoundMethod();
@@ -1370,7 +1371,25 @@ self.C3_ExpressionFuncs = [
 			return () => f0(f1(v2.GetValue(), v3.GetValue(), ","));
 		},
 		() => 30,
-		() => 0.2,
+		() => "Default",
+		() => "game",
+		p => {
+			const v0 = p._GetNode(0).GetVar();
+			return () => (and("video", v0.GetValue()) + "duman.mp4");
+		},
+		() => "",
+		p => {
+			const v0 = p._GetNode(0).GetVar();
+			return () => v0.GetValue();
+		},
+		p => {
+			const v0 = p._GetNode(0).GetVar();
+			return () => (and("video", v0.GetValue()) + "tanecik.mp4");
+		},
+		p => {
+			const v0 = p._GetNode(0).GetVar();
+			return () => (5 - v0.GetValue());
+		},
 		() => 100,
 		() => -30,
 		() => 7,
@@ -1383,7 +1402,21 @@ self.C3_ExpressionFuncs = [
 			const n0 = p._GetNode(0);
 			return () => (n0.ExpObject() - 1);
 		},
-		() => "",
+		() => 5,
+		() => "videoIdleTers",
+		p => {
+			const v0 = p._GetNode(0).GetVar();
+			return () => (v0.GetValue() - 1);
+		},
+		p => {
+			const v0 = p._GetNode(0).GetVar();
+			return () => (and("video", v0.GetValue()) + "dumanters.mp4");
+		},
+		p => {
+			const v0 = p._GetNode(0).GetVar();
+			return () => (and("video", v0.GetValue()) + "tanecikters.mp4");
+		},
+		() => "videoIdleDuz",
 		() => 300,
 		p => {
 			const f0 = p._GetNode(0).GetBoundMethod();
@@ -1392,7 +1425,8 @@ self.C3_ExpressionFuncs = [
 		p => {
 			const f0 = p._GetNode(0).GetBoundMethod();
 			return () => f0();
-		}
+		},
+		() => 0.2
 ];
 
 
